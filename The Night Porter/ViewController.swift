@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBAction func changeBackground(sender: AnyObject) {
         view.backgroundColor = UIColor.grayColor()
+        // why do this
         
     }
     override func viewDidLoad() {
