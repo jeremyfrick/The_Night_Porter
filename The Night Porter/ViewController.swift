@@ -16,6 +16,15 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     @IBAction func changeBackground(sender: AnyObject) {
         view.backgroundColor = UIColor.grayColor()
+        let allSubviews = view.subviews
+        
+        for eachView in allSubviews {
+        	if eachView is UILabel {
+        		let myLabel = eachView as! UILabel
+        		myLabel.textColor = UIColor.lightGrayColor()
+        		}
+        	}
+        // why do this
         
     }
     
